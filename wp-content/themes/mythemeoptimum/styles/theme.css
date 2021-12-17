@@ -1,0 +1,49 @@
+body {
+  background-color: black;
+}
+
+ul {
+  list-style: square;
+}
+
+.nav-item a {
+  margin: 0 1rem;
+  color: #0c0c0c;
+  text-decoration: none;
+}
+.nav-item a:hover {
+  color: #8c8c8c;
+  text-decoration: underline;
+}
+
+.link {
+  text-decoration: none;
+  color: #1A1919;
+}
+.link:hover {
+  text-decoration: underline;
+  color: initial;
+}
+
+.lessons-banner {
+  margin: 0% 10%;
+}
+
+.others-banner {
+  margin: 0% 15%;
+}
+
+.btn-primary {
+  background-color: #4C212A;
+  border-color: #4C212A;
+}
+.btn-primary:hover, .btn-primary:active, .btn-primary:focus, .btn-primary:focus-visible {
+  background-color: #B95C3B;
+  border-color: #B95C3B;
+}
+
+.bg-light {
+  background-color: #ffffff !important;
+}
+
+/*# sourceMappingURL=theme.css.map */
