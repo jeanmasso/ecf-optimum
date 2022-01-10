@@ -350,6 +350,13 @@
 		$vw_fitness_custom_css .='}';
 	}
 
+	$vw_fitness_featured_image_box_shadow = get_theme_mod('vw_fitness_featured_image_box_shadow',0);
+	if($vw_fitness_featured_image_box_shadow != false){
+		$vw_fitness_custom_css .='.box-image img, .feature-box img, #content-vw img{';
+			$vw_fitness_custom_css .='box-shadow: '.esc_attr($vw_fitness_featured_image_box_shadow).'px '.esc_attr($vw_fitness_featured_image_box_shadow).'px '.esc_attr($vw_fitness_featured_image_box_shadow).'px #cccccc;';
+		$vw_fitness_custom_css .='}';
+	}
+
 	$vw_fitness_single_blog_post_navigation_show_hide = get_theme_mod('vw_fitness_single_blog_post_navigation_show_hide',true);
 	if($vw_fitness_single_blog_post_navigation_show_hide != true){
 		$vw_fitness_custom_css .='.post-navigation{';

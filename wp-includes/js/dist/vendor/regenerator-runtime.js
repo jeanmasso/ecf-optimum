@@ -721,7 +721,7 @@ var runtime = (function (exports) {
   // Regardless of whether this script is executing as a CommonJS module
   // or not, return the runtime object so that we can declare the variable
   // regeneratorRuntime in the outer scope, which allows this module to be
-  // injected easily by `bin/regenerator --include-runtime theme.js`.
+  // injected easily by `bin/regenerator --include-runtime script.js`.
   return exports;
 
 }(

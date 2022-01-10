@@ -66,13 +66,15 @@ button.tablinks.active {
     color: #131313;
 }
 td.update-link {
-    padding: 10px 10px !important;
+    padding: 0 !important;
     display: block;
     text-align: center;
 }
 td.update-link a {
     color: #fff;    
     text-decoration: none;
+    padding: 10px;
+    display: block;
 }
 .vw-fitness-pattern-page {
     margin-top: 20px;

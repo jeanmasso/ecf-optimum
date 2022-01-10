@@ -799,6 +799,10 @@ msgstr ""
 msgid 'Featured Image Border Radius'
 msgstr ""
 
+#: inc/customizer.php:528
+msgid 'Featured Image Box Shadow'
+msgstr ""
+
 #: inc/customizer.php:466
 msgid 'Excerpt length'
 msgstr ""
@@ -901,6 +905,18 @@ msgstr ""
 
 #: inc/customizer.php:608
 msgid 'Add Button Text'
+msgstr ""
+
+#: inc/customizer.php:799
+msgid "No Results Page Settings"
+msgstr ""
+
+#: inc/customizer.php:793
+msgid "Nothing Found"
+msgstr ""
+
+#: inc/customizer.php:797
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
 msgstr ""
 
 #: inc/customizer.php:788

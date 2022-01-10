@@ -592,6 +592,22 @@ function vw_fitness_customize_register( $wp_customize ) {
 		),
 	) );
 
+	$wp_customize->add_setting( 'vw_fitness_featured_image_box_shadow', array(
+		'default'              => '0',
+		'transport' 		   => 'refresh',
+		'sanitize_callback'    => 'vw_fitness_sanitize_number_range'
+	) );
+	$wp_customize->add_control( 'vw_fitness_featured_image_box_shadow', array(
+		'label'       => esc_html__( 'Featured Image Box Shadow','vw-fitness' ),
+		'section'     => 'vw_fitness_post_settings',
+		'type'        => 'range',
+		'input_attrs' => array(
+			'step'             => 1,
+			'min'              => 1,
+			'max'              => 50,
+		),
+	) );
+
     $wp_customize->add_setting( 'vw_fitness_excerpt_number', array(
 		'default'              => 30,
 		'transport' 		   => 'refresh',
@@ -832,6 +848,40 @@ function vw_fitness_customize_register( $wp_customize ) {
             'placeholder' => __( 'Back to Home Page', 'vw-fitness' ),
         ),
 		'section'=> 'vw_fitness_404_page',
+		'type'=> 'text'
+	));
+
+	//No Result Page Setting
+	$wp_customize->add_section('vw_fitness_no_results_page',array(
+		'title'	=> __('No Results Page Settings','vw-fitness'),
+		'panel' => 'vw_fitness_panel_id',
+	));	
+
+	$wp_customize->add_setting('vw_fitness_no_results_page_title',array(
+		'default'=> '',
+		'sanitize_callback'	=> 'sanitize_text_field'
+	));
+
+	$wp_customize->add_control('vw_fitness_no_results_page_title',array(
+		'label'	=> __('Add Title','vw-fitness'),
+		'input_attrs' => array(
+            'placeholder' => __( 'Nothing Found', 'vw-fitness' ),
+        ),
+		'section'=> 'vw_fitness_no_results_page',
+		'type'=> 'text'
+	));
+
+	$wp_customize->add_setting('vw_fitness_no_results_page_content',array(
+		'default'=> '',
+		'sanitize_callback'	=> 'sanitize_text_field'
+	));
+
+	$wp_customize->add_control('vw_fitness_no_results_page_content',array(
+		'label'	=> __('Add Text','vw-fitness'),
+		'input_attrs' => array(
+            'placeholder' => __( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'vw-fitness' ),
+        ),
+		'section'=> 'vw_fitness_no_results_page',
 		'type'=> 'text'
 	));
 

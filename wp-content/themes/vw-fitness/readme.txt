@@ -4,7 +4,7 @@ Tags: left-sidebar, right-sidebar, one-column, two-columns, three-columns, four-
 Requires at least: 5.0
 Tested up to: 5.8
 Requires PHP: 7.2
-Stable tag: 3.5.4
+Stable tag: 3.5.6
 License: GPLv3.0 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -472,6 +472,15 @@ VW Fitness is a Free Responsive Multipurpose WordPress Theme for personal traine
 
 = 3.5.4 =
   -- Added animations on blog page.
+
+= 3.5.5 =
+  -- Added css in get started.
+
+= 3.5.6 =
+  -- Added featured image box shadow option in customizer.
+  -- Added no search result title option in customizer.
+  -- Added no search result content option in customizer.
+  -- Updated language folder.
 
 == Resources ==
 
