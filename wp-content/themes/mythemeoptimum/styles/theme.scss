@@ -1,9 +1,17 @@
-body {
-  background-color: black;
-}
+html {font-size: 100%;}
 
-ul {
-  list-style: square;
+body {background-color: black;}
+
+ul {list-style: square;}
+
+i {font-size: 5rem;}
+
+.banner-text-container {
+  position: absolute;
+  width: 50%;
+  color: white;
+  text-align: center;
+  & .banner-text {font-size: 1.3rem;}
 }
 
 .nav-item a {
@@ -27,13 +35,7 @@ ul {
   }
 }
 
-.lessons-banner {
-  margin: 0% 10%;
-}
-
-.others-banner {
-  margin: 0% 15%;
-}
+.lessons-banner, .others-banner {margin: 0% 10%;}
 
 .btn-primary {
   background-color: #4C212A;
@@ -45,6 +47,14 @@ ul {
   }
 }
 
-.bg-light {
-  background-color: #ffffff !important;
+.bg-light {background-color: #ffffff !important;}
+
+.social-network-container {
+  & .list-group-item {
+    padding: 0 .5rem;
+    border: 0;
+  }
+  & i {font-size: 2rem;}
 }
+
+@import "theme-responsive";

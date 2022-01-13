@@ -6,7 +6,7 @@ get_header();
 */
 ?>
 
-  <div class="container my-5 border-start border-end">
+  <div class="container my-4 my-md-5 border-md-start border-md-end">
     <?php
     $page_id = get_the_ID();
     $page = get_post($page_id);
@@ -17,10 +17,10 @@ get_header();
     echo '<h2 class="text-center text-white">'. get_the_title().'</h2>';
     echo '</div>';
 
-    echo '<div class="row my-5 d-flex justify-content-center">';
+    echo '<div class="row my-4 my-md-5 d-flex justify-content-center">';
 
       ?>
-      <div class="col-6">
+      <div class="col-12 col-md-6">
         <?php the_content(); ?>
       </div>
     <?php

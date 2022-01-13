@@ -282,15 +282,25 @@ function show_reservation_lesson_form()
     echo '<h3 class="text-white text-center mb-3">Réservez votre place à un cours</h3>';
     echo '<form method="POST">';
       echo '<div class="row mx-0 g-3">';
-        echo '<input type="text" name="fullname" class="form-control col-12" placeholder="Nom" required/>';
-        echo '<input type="email" name="mail" class="form-control col-12" placeholder="Email" required/>';
-        echo '<input type="tel" name="phone" class="form-control col-12" placeholder="N° de téléphone" required/>';
-        echo '<select name="lesson_id" class="form-select">';
-          foreach ($lessons as $e) {
-            echo '<option value="'.$e['ID'].'">'.$e['post_title'].'</option>';
-          }
-        echo'</select>';
-        echo '<button type="submit" name="reservation" class="btn btn-primary col-12">Réserver</button>';
+        echo '<div class="col-12">';
+          echo '<input type="text" name="fullname" class="form-control" placeholder="Nom" required/>';
+        echo '</div>';
+        echo '<div class="col-12">';
+          echo '<input type="email" name="mail" class="form-control" placeholder="Email" required/>';
+        echo '</div>';
+        echo '<div class="col-12">';
+          echo '<input type="tel" name="phone" class="form-control" placeholder="N° de téléphone" required/>';
+        echo '</div>';
+        echo '<div class="col-12">';
+          echo '<select name="lesson_id" class="form-select">';
+            foreach ($lessons as $e) {
+              echo '<option value="'.$e['ID'].'">'.$e['post_title'].'</option>';
+            }
+          echo'</select>';
+        echo '</div>';
+        echo '<div class="col-12">';
+          echo '<button type="submit" name="reservation" class="btn btn-primary w-100">Réserver</button>';
+        echo '</div>';
       echo '</div>';
     echo '</form>';
   echo '</fieldset>';

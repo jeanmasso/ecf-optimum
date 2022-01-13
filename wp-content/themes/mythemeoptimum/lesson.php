@@ -6,7 +6,7 @@ get_header();
 */
 ?>
 
-  <div class="container my-5 border-start border-end">
+  <div class="container my-4 my-md-5 border-md-start border-md-end">
       <?php
       $page_id = get_the_ID();
       $page = get_post($page_id);
@@ -16,7 +16,7 @@ get_header();
         'posts_per_page' => -1
       ));
 
-      echo '<div class="row mb-5">';
+      echo '<div class="row mt-4 mb-5">';
         echo '<h2 class="text-center text-white">'. get_the_title($page_id).'</h2>';
       echo '</div>';
 
@@ -35,11 +35,11 @@ get_header();
             $places = $meta_box_places." places";
 
             ?>
-            <div class="row my-5">
+            <div class="row">
               <h3 class="my-0 text-white text-center"><?php the_title(); ?></h3>
             </div>
-            <div class="row mx-0">
-              <div class="col-5">
+            <div class="row g-3 mx-0 mt-3 mb-5">
+              <div class="col-12 col-md-5">
                 <div class="lesson-image">
                   <?php
                   if (has_post_thumbnail())
@@ -49,7 +49,7 @@ get_header();
                   ?>
                 </div>
               </div>
-              <div class="col-7 text-white">
+              <div class="col-12 col-md-7 text-white">
                 <?php
                 the_content();
                 echo '<p>Prix : '.$price.'</p>';

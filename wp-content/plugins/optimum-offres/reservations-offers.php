@@ -254,20 +254,32 @@ function show_reservation_offer_form()
     }
   }
 
-  echo '<fieldset class="border rounded px-4 py-3">';
+  echo '<fieldset class="border rounded px-2 px-md-4 py-3">';
     echo '<h3 class="text-white text-center mb-3">Souscrivez un abonnement</h3>';
     echo '<form method="POST">';
       echo '<div class="row mx-0 g-3">';
-        echo '<input type="text" name="first_name" class="form-control col-12" placeholder="Prénom" required/>';
-        echo '<input type="text" name="last_name" class="form-control col-12" placeholder="Nom de famille" required/>';
-        echo '<input type="email" name="mail" class="form-control col-12" placeholder="Mail" required/>';
-        echo '<input type="tel" name="phone" class="form-control col-12" placeholder="N° de téléphone" required/>';
-        echo '<select name="offer_id" class="form-select">';
-          foreach ($offers as $e) {
-            echo '<option value="'.$e['ID'].'">'.$e['post_title'].'</option>';
-          }
-        echo'</select>';
-        echo '<button type="submit" name="souscription" class="btn btn-primary  col-12">Souscrire</button>';
+        echo '<div class="col-12">';
+          echo '<input type="text" name="first_name" class="form-control" placeholder="Prénom" required/>';
+        echo '</div>';
+        echo '<div class="col-12">';
+          echo '<input type="text" name="last_name" class="form-control" placeholder="Nom de famille" required/>';
+        echo '</div>';
+        echo '<div class="col-12">';
+              echo '<input type="email" name="mail" class="form-control" placeholder="Mail" required/>';
+        echo '</div>';
+        echo '<div class="col-12">';
+              echo '<input type="tel" name="phone" class="form-control" placeholder="N° de téléphone" required/>';
+        echo '</div>';
+        echo '<div class="col-12">';
+          echo '<select name="offer_id" class="form-select">';
+            foreach ($offers as $e) {
+              echo '<option value="'.$e['ID'].'">'.$e['post_title'].'</option>';
+            }
+          echo'</select>';
+        echo '</div>';
+        echo '<div class="col-12">';
+              echo '<button type="submit" name="souscription" class="btn btn-primary w-100">Souscrire</button>';
+        echo '</div>';
       echo '</div>';
     echo '</form>';
   echo '</fieldset>';

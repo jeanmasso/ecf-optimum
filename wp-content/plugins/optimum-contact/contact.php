@@ -102,12 +102,24 @@ function show_contact_form() {
     <h3 class="text-white text-center mb-3">Contactez-nous</h3>
     <form method="POST">
       <div class="row mx-0 g-3">
-        <input type="text" name="first_name" class="form-control col-12" placeholder="Prénom" required/>
-        <input type="text" name="last_name" class="form-control col-12" placeholder="Nom de famille" required/>
-        <input type="email" name="mail" class="form-control col-12" placeholder="Email" required/>
-        <input type="tel" name="phone" class="form-control col-12" placeholder="N° de téléphone" required/>
-        <textarea type="text" name="message" rows="5" class="form-control col-12" placeholder="Message" required></textarea>
-        <input type="submit" name="contact" class="btn btn-primary col-12" value="Envoyer"/>
+        <div class="col-12">
+          <input type="text" name="first_name" class="form-control" placeholder="Prénom" required/>
+        </div>
+        <div class="col-12">
+          <input type="text" name="last_name" class="form-control" placeholder="Nom de famille" required/>
+        </div>
+        <div class="col-12">
+          <input type="email" name="mail" class="form-control" placeholder="Email" required/>
+        </div>
+        <div class="col-12">
+          <input type="tel" name="phone" class="form-control" placeholder="N° de téléphone" required/>
+        </div>
+        <div class="col-12">
+          <textarea type="text" name="message" rows="5" class="form-control" placeholder="Message" required></textarea>
+        </div>
+        <div class="col-12">
+          <input type="submit" name="contact" class="btn btn-primary w-100" value="Envoyer"/>
+        </div>
       </div>
     </form>
   </fieldset>';
