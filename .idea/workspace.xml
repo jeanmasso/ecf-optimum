@@ -3,15 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="fb095c8f-8fb5-4d9b-a5bc-eadad81c1e4c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/optimum-contact/contact.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/optimum-contact/contact.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/plugins/optimum-cours/reservations-lessons.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/optimum-cours/reservations-lessons.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/optimum-offres/reservations-offers.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/optimum-offres/reservations-offers.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/mythemeoptimum/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/mythemeoptimum/footer.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/mythemeoptimum/form.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/mythemeoptimum/form.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/mythemeoptimum/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/mythemeoptimum/functions.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/mythemeoptimum/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/mythemeoptimum/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/mythemeoptimum/lesson.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/mythemeoptimum/lesson.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/mythemeoptimum/offer.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/mythemeoptimum/offer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/mythemeoptimum/styles/theme-responsive.scss" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/mythemeoptimum/styles/theme-responsive.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/mythemeoptimum/styles/theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/mythemeoptimum/styles/theme.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/mythemeoptimum/styles/theme.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/mythemeoptimum/styles/theme.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/mythemeoptimum/styles/theme.scss" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/mythemeoptimum/styles/theme.scss" afterDir="false" />
@@ -102,7 +99,7 @@
       <workItem from="1638135311342" duration="8000" />
       <workItem from="1639609093414" duration="36719000" />
       <workItem from="1641437272872" duration="520000" />
-      <workItem from="1642027275267" duration="21633000" />
+      <workItem from="1642027275267" duration="31345000" />
     </task>
     <servers />
   </component>

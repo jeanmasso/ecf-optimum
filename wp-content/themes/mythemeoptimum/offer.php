@@ -6,7 +6,7 @@ get_header();
 */
 ?>
 
-<div class="container my-4 my-md-5 border-md-start border-md-end">
+<div class="container my-4 my-md-5">
   <?php
   $page_id = get_the_ID();
   $page = get_post($page_id);

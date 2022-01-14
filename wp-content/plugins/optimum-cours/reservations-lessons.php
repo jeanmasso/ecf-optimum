@@ -278,6 +278,9 @@ function show_reservation_lesson_form()
     }
   }
 
+  # Id du cours envoyé en paramètre dans l'url
+  $lesson_param = $_GET["lessonId"];
+
   echo '<fieldset class="border rounded px-4 py-3">';
     echo '<h3 class="text-white text-center mb-3">Réservez votre place à un cours</h3>';
     echo '<form method="POST">';
@@ -294,7 +297,7 @@ function show_reservation_lesson_form()
         echo '<div class="col-12">';
           echo '<select name="lesson_id" class="form-select">';
             foreach ($lessons as $e) {
-              echo '<option value="'.$e['ID'].'">'.$e['post_title'].'</option>';
+              echo '<option value="'.$e['ID'].'"'.(($lesson_param != $e['ID'])?null:' selected').'>'.$e['post_title'].'</option>';
             }
           echo'</select>';
         echo '</div>';
